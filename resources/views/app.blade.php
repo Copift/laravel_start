@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+    @vite(['resources/css/app.css'])
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
     @include('header')
 
     <main>
-        <b> Copift's Project</b>
+        @yield('content')
     </main>
 
     @include('footer')
